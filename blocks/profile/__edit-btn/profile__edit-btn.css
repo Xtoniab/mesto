@@ -1,0 +1,24 @@
+.profile__edit-btn{
+  align-self: center;
+  justify-self: start;
+  width: 24px;
+  height: 24px;
+  grid-area: edit-btn;
+  background-color: rgba(240, 248, 255, 0);
+  background-image: url("../../../images/edit-profile-icon.svg");
+  border: 2px solid white;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 390px) {
+  .profile__edit-btn {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+

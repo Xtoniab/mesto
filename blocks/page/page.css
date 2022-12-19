@@ -9,3 +9,8 @@
   background-color: black;
   color: white;
 }
+
+.page .edit-profile-popup{
+  height: 100vh;
+  overflow-y: hidden;
+}

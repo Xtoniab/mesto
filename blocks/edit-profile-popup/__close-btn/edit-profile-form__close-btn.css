@@ -1,0 +1,10 @@
+.edit-profile-form__close-btn{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+
+  background-image: url("../../../images/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}

@@ -1,0 +1,24 @@
+.profile__name{
+  grid-area: name;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 1.14;
+  margin: 0;
+}
+
+
+@media screen and (max-width: 950px) {
+  .profile__name {
+    /*padding-left: calc(24px + 10px);*/
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile__name {
+    grid-template-columns: 100%;
+    justify-items: center;
+    font-size: 27px;
+    line-height: 1.22;
+    justify-self: center;
+  }
+}

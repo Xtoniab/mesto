@@ -1,0 +1,12 @@
+.place__title{
+  font-weight: 900;
+  font-size: 24px;
+  max-width: 190px;
+  line-height: 1.21;
+  color: black;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+

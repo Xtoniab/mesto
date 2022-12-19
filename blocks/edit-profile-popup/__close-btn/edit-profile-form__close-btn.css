@@ -1,0 +1,19 @@
+.edit-profile-form__close-btn {
+  grid-area: close-btn;
+  width: 32px;
+  height: 32px;
+  align-self: flex-end;
+  background-image: url("../../../images/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 520px) {
+  .edit-profile-form__close-btn {
+    width: 20px;
+    height: 20px;
+  }
+}

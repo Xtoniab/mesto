@@ -1,0 +1,52 @@
+/* Vendor */
+@import url("../vendor/normalize.css");
+@import url("../vendor/fonts/Inter/inter.css");
+
+/* Link */
+@import url("../blocks/link/link.css");
+
+/* Button */
+@import url("../blocks/button/button.css");
+
+/* Page */
+@import url("../blocks/page/page.css");
+
+/* Header */
+@import url("../blocks/header/header.css");
+@import url("../blocks/header/__logo/header__logo.css");
+
+/* Profile */
+@import url("../blocks/profile/profile.css");
+@import url("../blocks/profile/__add-place-btn/profile__add-place-btn.css");
+@import url("../blocks/profile/__caption/profile__caption.css");
+@import url("../blocks/profile/__edit-btn/profile__edit-btn.css");
+@import url("../blocks/profile/__info/profile__info.css");
+@import url("../blocks/profile/__name/profile__name.css");
+@import url("../blocks/profile/__avatar/profile__avatar.css");
+
+/* Places */
+@import url("../blocks/places/places.css");
+
+/* Place */
+@import url("../blocks/place/place.css");
+@import url("../blocks/place/__image/place__image.css");
+@import url("../blocks/place/__title/place__title.css");
+@import url("../blocks/place/__like-btn/place__like-btn.css");
+@import url("../blocks/place/__info/place__info.css");
+@import url("../blocks/place/__like-btn/_active/place__like-btn_active.css");
+
+/* Footer */
+@import url("../blocks/footer/footer.css");
+@import url("../blocks/footer/__copyright/footer__copyright.css");
+
+/* Edit Profile Popup */
+@import url("../blocks/edit-profile-popup/edit-profile-popup.css");
+@import url("../blocks/edit-profile-popup/__close-btn/edit-profile-form__close-btn.css");
+@import url("../blocks/edit-profile-popup/_opened/edit-profile-popup_opened.css");
+
+/* Edit Profile Form */
+@import url("../blocks/edit-profile-form/edit-profile-form.css");
+@import url("../blocks/edit-profile-form/__item/edit-profile-form__item.css");
+@import url("../blocks/edit-profile-form/__profile-info/edit-profile-form__profile-info.css");
+@import url("../blocks/edit-profile-form/__save-btn/edit-profile-form__save-btn.css");
+@import url("../blocks/edit-profile-form/__title/edit-profile-form__title.css");

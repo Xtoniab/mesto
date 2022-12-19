@@ -7,8 +7,7 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
 
-  display: grid;
-  grid-template-columns: minmax(19px, 1fr) minmax(min-content, 430px) minmax(19px, 1fr);
+  grid-template-columns: minmax(11px, 1fr) minmax(min-content, 430px) minmax(11px, 1fr);
   grid-template-rows: 1fr minmax(min-content, max-content) 1fr;
   gap: 8px;
   grid-template-areas:
@@ -24,5 +23,7 @@
       ". form ."
       ". . .";
     justify-items: end;
+    grid-template-columns: minmax(3px, 1fr) minmax(min-content, 430px) minmax(3px, 1fr);
+    gap: 16px;
   }
 }

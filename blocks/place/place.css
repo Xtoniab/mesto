@@ -6,10 +6,11 @@
   grid-template-rows: max-content 1fr;
 
   grid-template-areas:
-  "image",
+  "image"
   "info";
 
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
+  margin: 0;
 }

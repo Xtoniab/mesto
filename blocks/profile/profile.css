@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: min-content 1fr min-content;
   margin: 40px auto 0;
-  max-width: calc(880 / 1280 * 100%);
+  max-width: min(880px, calc(880 / 1280 * 100%));
 }
 
 @media screen and (max-width: 950px) {

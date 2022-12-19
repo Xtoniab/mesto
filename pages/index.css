@@ -39,10 +39,10 @@
 @import url("../blocks/footer/footer.css");
 @import url("../blocks/footer/__copyright/footer__copyright.css");
 
-/* Edit Profile Popup */
-@import url("../blocks/edit-profile-popup/edit-profile-popup.css");
-@import url("../blocks/edit-profile-popup/__close-btn/edit-profile-form__close-btn.css");
-@import url("../blocks/edit-profile-popup/_opened/edit-profile-popup_opened.css");
+/* Popup */
+@import url("../blocks/popup/popup.css");
+@import url("../blocks/popup/__close-btn/popup__close-btn.css");
+@import url("../blocks/popup/_opened/popup_opened.css");
 
 /* Edit Profile Form */
 @import url("../blocks/edit-profile-form/edit-profile-form.css");

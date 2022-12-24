@@ -4,5 +4,5 @@
   align-items: center;
   justify-content: space-between;
   min-width: calc(100% - 20px * 2);
-  margin: auto;
+  margin: 25px auto 25px;
 }

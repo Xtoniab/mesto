@@ -6,24 +6,4 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
-
-  grid-template-columns: minmax(11px, 1fr) minmax(min-content, 430px) minmax(11px, 1fr);
-  grid-template-rows: 1fr minmax(min-content, max-content) 1fr;
-  gap: 8px;
-  grid-template-areas:
-    ". . close-btn"
-    ". form ."
-    ". . .";
-}
-
-@media screen and (max-width: 520px) {
-  .popup {
-    grid-template-areas:
-      ". close-btn ."
-      ". form ."
-      ". . .";
-    justify-items: end;
-    grid-template-columns: minmax(3px, 1fr) minmax(min-content, 430px) minmax(3px, 1fr);
-    gap: 16px;
-  }
 }

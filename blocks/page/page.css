@@ -8,4 +8,5 @@
   text-rendering: optimizeLegibility;
   background-color: black;
   color: white;
+  min-height: 100vh;
 }

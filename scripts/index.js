@@ -4,9 +4,9 @@ let profileEditBtn = document.querySelector('.profile__edit-btn');
 
 let popup = document.querySelector('.popup');
 let popupCloseBtn = document.querySelector('.popup__close-btn');
-let editProfileFormNameInput = document.querySelector('.edit-profile-form__item_type_name');
-let editProfileFormCaptionInput = document.querySelector('.edit-profile-form__item_type_caption');
-let editProfileForm = document.querySelector('.edit-profile-form');
+let editProfileFormNameInput = document.querySelector('.popup__form-item_type_name');
+let editProfileFormCaptionInput = document.querySelector('.popup__form-item_type_caption');
+let editProfileForm = document.querySelector('.popup__form');
 
 let likesBtns = document.querySelectorAll('.place__like-btn');
 

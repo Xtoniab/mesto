@@ -1,7 +1,7 @@
 .place{
   display: grid;
   width: 282px;
-  height: 361px;
+  min-height: 361px;
 
   grid-template-rows: max-content 1fr;
 
@@ -11,6 +11,6 @@
 
   background-color: white;
   border-radius: 10px;
-  overflow: hidden;
+
   margin: 0;
 }

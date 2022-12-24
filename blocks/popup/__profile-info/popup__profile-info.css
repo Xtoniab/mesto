@@ -1,4 +1,4 @@
-.edit-profile-form__profile-info{
+.popup__profile-info{
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -11,7 +11,7 @@
 }
 
 @media screen and (max-width: 320px) {
-  .edit-profile-form__profile-info {
+  .popup__profile-info {
     max-width: calc(100% - 22px * 2);
     margin-top: 75px;
   }

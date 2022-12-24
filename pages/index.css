@@ -41,12 +41,11 @@
 
 /* Popup */
 @import url("../blocks/popup/popup.css");
+@import url("../blocks/popup/__container/popup__container.css");
 @import url("../blocks/popup/__close-btn/popup__close-btn.css");
 @import url("../blocks/popup/_opened/popup_opened.css");
-
-/* Edit Profile Form */
-@import url("../blocks/edit-profile-form/edit-profile-form.css");
-@import url("../blocks/edit-profile-form/__item/edit-profile-form__item.css");
-@import url("../blocks/edit-profile-form/__profile-info/edit-profile-form__profile-info.css");
-@import url("../blocks/edit-profile-form/__save-btn/edit-profile-form__save-btn.css");
-@import url("../blocks/edit-profile-form/__title/edit-profile-form__title.css");
+@import url("../blocks/popup/__form-item/popup__form-item.css");
+@import url("../blocks/popup/__form/popup__form.css");
+@import url("../blocks/popup/__profile-info/popup__profile-info.css");
+@import url("../blocks/popup/__save-btn/popup__save-btn.css");
+@import url("../blocks/popup/__title/popup__title.css");

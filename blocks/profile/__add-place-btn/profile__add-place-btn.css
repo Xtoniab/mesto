@@ -2,6 +2,7 @@
   align-self: center;
   min-height: 50px;
   min-width: 150px;
+  padding: 0;
   border: 2px solid white;
   border-radius: 2px;
   background-color: rgba(255, 255, 255, 0);
@@ -11,6 +12,11 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  transition: opacity 0.4s;
+}
+
+.profile__add-place-btn:hover {
+  opacity: 0.6;
 }
 
 

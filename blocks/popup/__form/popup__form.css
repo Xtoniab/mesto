@@ -1,4 +1,4 @@
-.edit-profile-form {
+.popup__form {
   grid-area: form;
   min-width: min(430px, 100%);
   background-color: white;
@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: 520px) {
-  .edit-profile-form {
+  .popup__form {
     padding-bottom: 25px;
   }
 }

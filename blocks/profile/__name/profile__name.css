@@ -12,10 +12,9 @@
 
 @media screen and (max-width: 480px) {
   .profile__name {
-    grid-template-columns: 100%;
-    justify-items: center;
     font-size: 27px;
     line-height: 1.22;
     justify-self: center;
+    max-width: 220px;
   }
 }

@@ -19,6 +19,7 @@
   .profile__caption {
     justify-self: center;
     align-self: center;
+    max-width: 300px;
   }
 }
 

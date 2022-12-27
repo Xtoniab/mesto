@@ -12,16 +12,16 @@
   gap: 8px;
   grid-template-areas:
     ". . close-btn"
-    ". form ."
-    ". . .";
+    ". content ."
+    ". caption .";
 }
 
 @media screen and (max-width: 520px) {
   .popup__container {
     grid-template-areas:
       ". close-btn ."
-      ". form ."
-      ". . .";
+      ". content ."
+      ". caption .";
     justify-items: end;
     grid-template-columns: minmax(3px, 1fr) minmax(min-content, 430px) minmax(3px, 1fr);
     gap: 16px;

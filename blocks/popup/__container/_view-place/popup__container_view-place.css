@@ -1,0 +1,10 @@
+.popup__container_view-place{
+  grid-template-columns: 1fr minmax(min-content, max-content) 1fr;
+  grid-template-rows: 1fr minmax(min-content, max-content) 1fr;
+}
+
+@media screen and (max-width: 520px) {
+  .popup__container_view-place {
+    gap: 10px;
+  }
+}

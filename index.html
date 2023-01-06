@@ -7,6 +7,12 @@
   <title>Путешествия по России</title>
 
   <link rel="stylesheet" href="pages/index.css">
+
+  <script defer src="scripts/constants.js"></script>
+  <script defer src="scripts/forms.js"></script>
+  <script defer src="scripts/popups.js"></script>
+  <script defer src="scripts/validate.js"></script>
+  <script defer src="scripts/index.js"></script>
 </head>
 
 <body>
@@ -37,17 +43,18 @@
 
     <div class="popup" id="edit-profile-popup">
       <div class="popup__container">
-        <div class="popup__black-veil"></div>
-        <button type="button" class="popup__close-btn"></button>
-        <form class="popup__form" name="profile-form">
+        <button type="button" class="popup__close-btn" aria-label="Закрыть окно"></button>
+        <form class="popup__form" name="profile-form" id="edit-profile-form">
           <p class="popup__title">Редактировать профиль</p>
           <fieldset class="popup__fields">
             <label class="popup__field">
-              <input type="text" name="name" class="popup__form-item" id="info-input-name" required>
+              <input type="text" name="name" class="popup__form-item" id="info-input-name" placeholder="Имя"
+                minlength="2" maxlength="40" required>
               <span class="popup__input-error info-input-name-error"></span>
             </label>
             <label class="popup__field">
-              <input type="text" name="caption" class="popup__form-item" id="info-input-caption" required>
+              <input type="text" name="caption" class="popup__form-item" id="info-input-caption" placeholder="О себе"
+                minlength="2" maxlength="200" required>
               <span class="popup__input-error info-input-caption-error"></span>
             </label>
           </fieldset>
@@ -58,14 +65,13 @@
 
     <div class="popup" id="add-place-popup">
       <div class="popup__container">
-        <div class="popup__black-veil"></div>
-        <button type="button" class="popup__close-btn"></button>
-        <form class="popup__form" name="place-form">
+        <button type="button" class="popup__close-btn" aria-label="Закрыть окно"></button>
+        <form class="popup__form" name="place-form" id="add-place-form">
           <p class="popup__title">Новое Место</p>
           <fieldset class="popup__fields">
             <label class="popup__field">
               <input type="text" name="name" class="popup__form-item" id="place-input-name" placeholder="Название"
-                required>
+                minlength="2" maxlength="30" required>
               <span class="popup__input-error place-input-name-error"></span>
             </label>
             <label class="popup__field">
@@ -79,11 +85,9 @@
       </div>
     </div>
 
-
     <div class="popup popup_view-place" id="view-place-popup">
       <div class="popup__container">
-        <div class="popup__black-veil popup__black-veil_view-place"></div>
-        <button type="button" class="popup__close-btn"></button>
+        <button type="button" class="popup__close-btn" aria-label="Закрыть окно"></button>
         <img class="popup__image" src="#" alt="">
         <p class="popup__image-caption"></p>
       </div>
@@ -95,14 +99,11 @@
         <img class="place__image" src="images/place-karachevsk.jpg" alt="Старый храм">
         <div class="place__info">
           <h3 class="place__title">Карачаево-Черкесия</h3>
-          <button type="button" class="place__like-btn"></button>
+          <button type="button" class="place__like-btn" aria-label="Поставить лайк"></button>
         </div>
       </article>
     </template>
-
   </div>
-  <script src="scripts/index.js"></script>
-  <script src="scripts/validate.js"></script>
 </body>
 
 </html>

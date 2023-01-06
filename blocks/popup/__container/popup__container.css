@@ -5,6 +5,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  cursor: pointer;
 
   grid-template-columns: minmax(11px, 1fr) minmax(min-content, 430px) minmax(11px, 1fr);
   grid-template-rows: 1fr minmax(min-content, max-content) 1fr;
@@ -13,6 +14,10 @@
     ". . close-btn"
     ". content ."
     ". caption .";
+}
+
+.popup__container>* {
+  cursor: default;
 }
 
 @media screen and (max-width: 520px) {

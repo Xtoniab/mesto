@@ -147,7 +147,7 @@ function closePopup(popup) {
   document.removeEventListener('keydown', popup.handleEcsPressed);
 }
 
-function initPopup(popup){
+function initPopup(popup) {
   popup.open = () => openPopup(popup);
   popup.close = () => closePopup(popup);
   popup.handleEcsPressed = evt => {
@@ -160,17 +160,17 @@ function initPopup(popup){
   initCloseBtn(popup)
 }
 
-function initBlackVeil(popup){
+function initBlackVeil(popup) {
   const blackVeil = popup.querySelector('.popup__black-veil');
   blackVeil.addEventListener('click', popup.close);
 }
 
-function initCloseBtn(popup){
+function initCloseBtn(popup) {
   const closeBtn = popup.querySelector('.popup__close-btn');
   closeBtn.addEventListener('click', popup.close);
 }
 
-function initPopups(){
+function initPopups() {
   const popups = document.querySelectorAll('.popup');
   popups.forEach(initPopup);
 }

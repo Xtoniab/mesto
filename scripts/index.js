@@ -44,7 +44,7 @@ function editProfileFormSubmit(evt) {
   evt.preventDefault();
   profileNameElement.textContent = editProfileFormNameInput.value;
   profileCaptionElement.textContent = editProfileFormCaptionInput.value;
-  closePopup(editProfilePopup);
+  editProfilePopup.close();
 }
 
 function openEditProfilePopup() {
@@ -53,7 +53,7 @@ function openEditProfilePopup() {
 
   editProfileForm.toggleButtonState();
   editProfileForm.hideErrors();
-  openPopup(editProfilePopup);
+  editProfilePopup.open();
 }
 
 /* ------ Add Place ------ */
@@ -74,7 +74,7 @@ function openAddPlacePopup() {
   addPlaceFormLinkInput.value = '';
   addPlaceForm.hideErrors();
   addPlaceForm.toggleButtonState();
-  openPopup(addPlacePopup)
+  addPlacePopup.open();
 }
 
 function addPlaceFormSubmit(evt) {
@@ -88,7 +88,7 @@ function addPlaceFormSubmit(evt) {
   const newPlace = createPlace(placeInfo);
   console.log(newPlace);
   addPlace(newPlace);
-  closePopup(addPlacePopup);
+  addPlacePopup.close();
 }
 
 function addPlace(place) {
@@ -123,7 +123,7 @@ function openViewPlacePopup(placeInfo) {
   viewPlacePopupImage.src = placeInfo.link;
   viewPlacePopupImage.alt = placeInfo.name;
 
-  openPopup(viewPlacePopup);
+  viewPlacePopup.open();
 }
 
 /* ------ Likes ------ */
@@ -139,28 +139,40 @@ defaultPlaces.map(createPlace).forEach(addPlace);
 
 function openPopup(popup) {
   popup.classList.add('popup_opened');
+  document.addEventListener('keydown', popup.handleEcsPressed);
 }
 
 function closePopup(popup) {
   popup.classList.remove('popup_opened');
+  document.removeEventListener('keydown', popup.handleEcsPressed);
 }
 
-const closeButtons = document.querySelectorAll('.popup__close-btn');
-const popups = document.querySelectorAll('.popup');
+function initPopup(popup){
+  popup.open = () => openPopup(popup);
+  popup.close = () => closePopup(popup);
+  popup.handleEcsPressed = evt => {
+    if (evt.code === "Escape") {
+      popup.close();
+    }
+  };
 
-closeButtons.forEach((button) => {
-  const popup = button.closest('.popup');
-  button.addEventListener('click', () => closePopup(popup));
-});
+  initBlackVeil(popup);
+  initCloseBtn(popup)
+}
 
-popups.forEach(popup => {
+function initBlackVeil(popup){
   const blackVeil = popup.querySelector('.popup__black-veil');
-  blackVeil.addEventListener('click', () => closePopup(popup));
-});
+  blackVeil.addEventListener('click', popup.close);
+}
 
+function initCloseBtn(popup){
+  const closeBtn = popup.querySelector('.popup__close-btn');
+  closeBtn.addEventListener('click', popup.close);
+}
 
-document.addEventListener("keydown", evt => {
-  if (evt.code === "Escape") {
-    popups.forEach(closePopup);
-  }
-});
+function initPopups(){
+  const popups = document.querySelectorAll('.popup');
+  popups.forEach(initPopup);
+}
+
+initPopups();

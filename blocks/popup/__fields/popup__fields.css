@@ -1,7 +1,4 @@
 .popup__fields{
-  display: flex;
-  flex-direction: column;
-  gap: 13px;
   border: 0;
   margin: 47px auto 0;
   max-width: calc(100% - 36px * 2);

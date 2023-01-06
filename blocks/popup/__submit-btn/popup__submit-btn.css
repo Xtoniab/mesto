@@ -1,7 +1,7 @@
 .popup__submit-btn{
   display: block;
   padding: 0;
-  margin: 48px auto 0;
+  margin: 30px auto 0;
   min-width: min(358px, 100% - 36px * 2);
   max-width: calc(100% - 36px * 2);
   min-height: 50px;

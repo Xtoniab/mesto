@@ -50,6 +50,9 @@ function editProfileFormSubmit(evt) {
 function openEditProfilePopup() {
   editProfileFormNameInput.value = profileNameElement.textContent;
   editProfileFormCaptionInput.value = profileCaptionElement.textContent;
+
+  editProfileForm.toggleButtonState();
+  editProfileForm.hideErrors();
   openPopup(editProfilePopup);
 }
 
@@ -69,6 +72,8 @@ addPlaceBtn.addEventListener('click', openAddPlacePopup);
 function openAddPlacePopup() {
   addPlaceFormNameInput.value = '';
   addPlaceFormLinkInput.value = '';
+  addPlaceForm.hideErrors();
+  addPlaceForm.toggleButtonState();
   openPopup(addPlacePopup)
 }
 
@@ -141,8 +146,21 @@ function closePopup(popup) {
 }
 
 const closeButtons = document.querySelectorAll('.popup__close-btn');
+const popups = document.querySelectorAll('.popup');
 
 closeButtons.forEach((button) => {
   const popup = button.closest('.popup');
   button.addEventListener('click', () => closePopup(popup));
+});
+
+popups.forEach(popup => {
+  const blackVeil = popup.querySelector('.popup__black-veil');
+  blackVeil.addEventListener('click', () => closePopup(popup));
+});
+
+
+document.addEventListener("keydown", evt => {
+  if (evt.code === "Escape") {
+    popups.forEach(closePopup);
+  }
 });

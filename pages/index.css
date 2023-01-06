@@ -54,5 +54,5 @@
 @import url("../blocks/popup/__image-caption/popup__image-caption.css");
 @import url("../blocks/popup/__black-veil/_view-place/popup__black-veil_view-place.css");
 @import url("../blocks/popup/__submit-btn/_disabled/popup__submit-btn_disabled.css");
-@import url("../blocks/popup/__input-error/form__input-error.css");
+@import url("../blocks/popup/__input-error/popup__input-error.css");
 @import url("../blocks/popup/__input-error/_visible/popup__input-error_visible.css");

@@ -24,10 +24,3 @@ const defaultPlaces = [
     link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
   }
 ];
-
-const editProfilePopupId = 'edit-profile-popup';
-const addPlacePopupId = 'add-place-popup';
-const viewPlacePopupId = 'view-place-popup';
-
-const editProfileFormId = 'edit-profile-form';
-const addPlaceFormId = 'add-place-form';

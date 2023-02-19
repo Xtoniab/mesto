@@ -1,7 +1,7 @@
 export class FormValidator {
-  constructor(form, inpunts) {
+  constructor(form, inputs) {
     this._form = form;
-    this._inputs = inpunts;
+    this._inputs = inputs;
 
     this._inputErrorClass = 'popup__form-item_incorrect';
     this._errorClass = 'popup__input-error_visible';

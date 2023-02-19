@@ -1,5 +1,4 @@
-import { Card } from './card.js';
-import * as all from './Form/FormValidator.js'
+import { Card } from './Card.js';
 import { AddPlacePopup } from './popup/AddPlacePopup.js';
 import { EditProfilePopup } from './popup/EditProfilePopup.js';
 import { ViewPlacePopup } from './popup/ViewPlacePopup.js';
